@@ -1,0 +1,34 @@
+Manual Approval Pipeline Lab
+
+This project demonstrates a simple CI/CD pipeline on AWS with a manual approval stage before production deployment.
+
+Overview
+
+Pipeline flow:
+
+GitHub → AWS CodeBuild → Deploy to Dev (S3) → Manual Approval → Deploy to Prod
+
+Services Used
+
+- AWS CodePipeline
+- AWS CodeBuild
+- Amazon S3
+- Amazon SNS
+- AWS IAM
+- GitHub
+
+Key Points
+
+- Implemented full CI/CD pipeline
+- Added Manual Approval before production
+- Used SNS for notifications
+- Fixed IAM issue (s3:PutObject AccessDenied)
+
+Files
+
+- index.html
+- buildspec.yml
+
+Notes
+
+Practice project demonstrating deployment workflows with approval control.
